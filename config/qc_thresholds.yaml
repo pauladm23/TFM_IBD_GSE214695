@@ -1,0 +1,233 @@
+# =============================================================================
+# Umbrales de QC DECIDIDOS por Paula para cada una de las 18
+# muestras de GSE214695, extraídos de QC_summary_all_samples.csv (resultado
+# real del notebook interactivo ya ejecutado). Estos son los valores que
+# scripts/01_qc.py aplica de forma determinista y automática, garantizando
+# que el pipeline sea 100% reproducible sin intervención manual.
+#
+# Los nombres de campo son los que usa la máscara de filtrado original — no renombrar.
+# =============================================================================
+
+qc:
+  umi_prefilt_threshold_default: 100
+  mito_absolute_max: 50.0
+  n_mads_default: 3.0
+  run_scrublet: true
+ 
+  per_sample:
+    GSM6614348_HC-1:
+      umi_prefilt_threshold: 450
+      min_genes: 200
+      max_genes: 2000
+      min_umis: 450
+      max_umis: 19800
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 59.5
+      min_log10_ratio: 1.05
+      remove_doublets: true
+ 
+    GSM6614349_HC-2:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 3360
+      min_umis: 600
+      max_umis: 50000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.97
+      remove_doublets: true
+ 
+    GSM6614350_HC-3:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2300
+      min_umis: 600
+      max_umis: 30000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.95
+      remove_doublets: true
+ 
+    GSM6614351_HC-4:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2700
+      min_umis: 600
+      max_umis: 30000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.91
+      remove_doublets: true
+ 
+    GSM6614352_HC-5:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2825
+      min_umis: 600
+      max_umis: 28000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.96
+      remove_doublets: true
+ 
+    GSM6614353_HC-6:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 3000
+      min_umis: 600
+      max_umis: 30000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.78
+      remove_doublets: true
+ 
+    GSM6614354_UC-1:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 1625
+      min_umis: 600
+      max_umis: 30000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.9
+      remove_doublets: true
+ 
+    GSM6614355_UC-2:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2200
+      min_umis: 600
+      max_umis: 31000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.94
+      remove_doublets: true
+ 
+    GSM6614356_UC-3:
+      umi_prefilt_threshold: 550
+      min_genes: 200
+      max_genes: 2308
+      min_umis: 550
+      max_umis: 33400
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.91
+      remove_doublets: true
+ 
+    GSM6614357_UC-4:
+      umi_prefilt_threshold: 550
+      min_genes: 200
+      max_genes: 2900
+      min_umis: 550
+      max_umis: 42000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 1.08
+      remove_doublets: true
+ 
+    GSM6614358_UC-5:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2925
+      min_umis: 600
+      max_umis: 42000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.93
+      remove_doublets: true
+ 
+    GSM6614359_UC-6:
+      umi_prefilt_threshold: 550
+      min_genes: 200
+      max_genes: 3150
+      min_umis: 550
+      max_umis: 30000
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.97
+      remove_doublets: true
+ 
+    GSM6614360_CD-1:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 3050
+      min_umis: 600
+      max_umis: 45700
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 1.05
+      remove_doublets: true
+ 
+    GSM6614361_CD-2:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2499
+      min_umis: 600
+      max_umis: 39900
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 1.04
+      remove_doublets: true
+ 
+    GSM6614362_CD-3:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 3563
+      min_umis: 600
+      max_umis: 30600
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.95
+      remove_doublets: true
+ 
+    GSM6614363_CD-4:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2474
+      min_umis: 600
+      max_umis: 20800
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.6
+      remove_doublets: true
+ 
+    GSM6614364_CD-5:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 3650
+      min_umis: 600
+      max_umis: 28250
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 1.05
+      remove_doublets: true
+ 
+    GSM6614365_CD-6:
+      umi_prefilt_threshold: 600
+      min_genes: 200
+      max_genes: 2956
+      min_umis: 600
+      max_umis: 23500
+      max_mito_pct: 50.0
+      min_ribo_pct: 0.0
+      max_ribo_pct: 50.0
+      min_log10_ratio: 0.94
+      remove_doublets: true
+ 

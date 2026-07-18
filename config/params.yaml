@@ -1,0 +1,60 @@
+# =============================================================================
+# config/params.yaml
+#
+# Única fuente de verdad para las rutas del pipeline. Ningún script/notebook
+# debe llevar rutas hardcodeadas: todas se construyen a partir de PROJECT_ROOT
+# (definida por variable de entorno TFM_ROOT) + estas rutas relativas.
+#
+# En Colab:   TFM_ROOT = /content/drive/MyDrive/IBD_TFM
+# En local:   TFM_ROOT = /ruta/a/tu/clon/del/repo   (o la carpeta de datos)
+# =============================================================================
+
+project_root_env_var: "TFM_ROOT"
+project_root_default: "/content/drive/MyDrive/IBD_TFM"   # fallback si no se define la env var
+
+paths:
+  raw:
+    tar_file: "data/raw/GSE214695_RAW.tar"
+    annotation_file: "data/raw/GSE214695_cell_annotation.csv.gz"
+
+  interim:
+    root: "data/interim"
+    00_raw_h5ad: "data/interim/00_raw_h5ad"         
+    01_qc: "data/interim/01_qc"                       
+    01_qc_filtered: "data/interim/01_qc/filtered"
+    01_qc_figures: "data/interim/01_qc/figures"
+    01_qc_reports: "data/interim/01_qc/reports"
+    02_normalized: "data/interim/02_normalized"        
+    03_diagnostics: "data/interim/03_diagnostics"     
+    04_integrated: "data/interim/04_integrated"        
+    05_clustered: "data/interim/05_clustered"          
+    06_annotated: "data/interim/06_annotated"           
+
+  processed:
+    root: "data/processed"
+
+  reports:
+    figures: "reports/figures"
+    tables: "reports/tables"
+
+# Ficheros de salida principales de cada etapa 
+outputs:
+  normalized_h5ad: "IBD_normalized.h5ad"
+  diagnosed_h5ad: "IBD_diagnosed.h5ad"
+  integrated_h5ad: "IBD_integrated.h5ad"
+  clustered_h5ad: "IBD_clustered.h5ad"
+  annotated_h5ad: "IBD_annotated.h5ad"
+
+# Parámetros del pipeline 
+pipeline:
+  batch_key: "sample_id"
+  condition_key: "condition"
+  n_pcs: 20
+  n_hvg: 3000
+  target_sum_cpm: 1.0e4
+  leiden_resolutions: [0.3, 0.5, 0.8, 1.0]
+  leiden_main_resolution: 0.8
+  palette:
+    HC: "#2E86AB"
+    UC: "#E84855"
+    CD: "#F4A261"
