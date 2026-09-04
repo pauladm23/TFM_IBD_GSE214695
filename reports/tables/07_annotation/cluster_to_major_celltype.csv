@@ -1,0 +1,22 @@
+cluster,major_type,purity,n_cells,best_lineage_markers,consensus_type
+0,CD8,0.539,4865,T cell,CD8
+1,Colonocytes,0.399,4673,Tuft,Ambiguous (sin identidad clara)
+2,CD4,0.533,4436,T cell,CD4
+3,PC IgA,0.465,4162,Plasma,PC IgA
+4,PC IgA,0.489,3675,Plasma,PC IgA
+5,CD4,0.453,3451,T cell,CD4
+6,PC IgG,0.778,2939,B cell,PC IgG
+7,S1,0.351,2478,Fibroblast,Fibroblast (subtipo indeterminado)
+8,Colonocytes,0.815,2421,Epitelial,Colonocytes
+9,B cell,0.559,2226,B cell,B cell
+10,Goblet,0.727,2187,Goblet,Goblet
+11,M0,0.214,2132,Monocyte,Monocyte (subtipo indeterminado)
+12,Mast,0.822,874,Mast,Mast
+13,DN,0.225,663,Plasma,Plasma (subtipo indeterminado)
+14,N1,0.44,554,Monocyte,N1
+15,Ribhi T cells,0.192,505,Tuft,Ambiguous (sin identidad clara)
+16,Tuft cells,0.926,435,Tuft,Tuft cells
+17,Endothelium,0.648,304,Endothelial,Endothelium
+18,Glia,0.538,182,Plasma,Glia
+19,PC IgA,0.017,115,Plasma,Plasma (subtipo indeterminado)
+20,CD8,0.018,111,Goblet,Goblet (subtipo indeterminado)

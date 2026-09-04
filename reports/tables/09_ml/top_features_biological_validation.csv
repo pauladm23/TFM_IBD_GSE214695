@@ -1,0 +1,31 @@
+feature,mean_abs_shap,feature_clean,es_indicador_ausencia,column_name,tipo_celular,gen,comparacion,log2FC,padj,en_lista_IBD_conocida
+Colonocytes__DPY30__CD_vs_HC,0.013367161662915225,Colonocytes__DPY30__CD_vs_HC,False,Colonocytes__DPY30__CD_vs_HC,Colonocytes,DPY30,CD_vs_HC,-1.2789,0.0012144,False
+Colonocytes__CYP3A4__CD_vs_HC,0.013184584875121443,Colonocytes__CYP3A4__CD_vs_HC,False,Colonocytes__CYP3A4__CD_vs_HC,Colonocytes,CYP3A4,CD_vs_HC,-6.6106,0.00099351,False
+PC_IgA__TLE1__CD_vs_HC,0.013180156131941172,PC_IgA__TLE1__CD_vs_HC,False,PC_IgA__TLE1__CD_vs_HC,PC IgA,TLE1,CD_vs_HC,2.1435,8.1694e-05,False
+Colonocytes__APOBEC3C__CD_vs_HC,0.011820231140436874,Colonocytes__APOBEC3C__CD_vs_HC,False,Colonocytes__APOBEC3C__CD_vs_HC,Colonocytes,APOBEC3C,CD_vs_HC,-3.6922,0.0023592,False
+CD4__UBXN10-AS1__UC_vs_HC,0.01132897457176462,CD4__UBXN10-AS1__UC_vs_HC,False,CD4__UBXN10-AS1__UC_vs_HC,CD4,UBXN10-AS1,UC_vs_HC,4.7187,6.2321e-06,False
+Monocyte_(subtipo_indeterminado)__PLA2G12A__UC_vs_HC,0.01046671153950683,Monocyte_(subtipo_indeterminado)__PLA2G12A__UC_vs_HC,False,Monocyte_(subtipo_indeterminado)__PLA2G12A__UC_vs_HC,Monocyte (subtipo indeterminado),PLA2G12A,UC_vs_HC,-2.9392,0.035171,False
+Monocyte_(subtipo_indeterminado)__PIM1__UC_vs_HC,0.00915985125917662,Monocyte_(subtipo_indeterminado)__PIM1__UC_vs_HC,False,Monocyte_(subtipo_indeterminado)__PIM1__UC_vs_HC,Monocyte (subtipo indeterminado),PIM1,UC_vs_HC,2.6614,3.2843e-08,False
+Monocyte_(subtipo_indeterminado)__S100A8__CD_vs_HC,0.009063666065217179,Monocyte_(subtipo_indeterminado)__S100A8__CD_vs_HC,False,Monocyte_(subtipo_indeterminado)__S100A8__CD_vs_HC,Monocyte (subtipo indeterminado),S100A8,CD_vs_HC,6.553,1.1213e-14,True
+Monocyte_(subtipo_indeterminado)__CTTNBP2__UC_vs_HC,0.008697255960939168,Monocyte_(subtipo_indeterminado)__CTTNBP2__UC_vs_HC,False,Monocyte_(subtipo_indeterminado)__CTTNBP2__UC_vs_HC,Monocyte (subtipo indeterminado),CTTNBP2,UC_vs_HC,-4.8531,1.4805e-06,False
+PC_IgA__TLE1__UC_vs_HC,0.007576985041554165,PC_IgA__TLE1__UC_vs_HC,False,PC_IgA__TLE1__UC_vs_HC,PC IgA,TLE1,UC_vs_HC,2.2655,5.1567e-07,False
+Colonocytes__DPY30__UC_vs_HC,0.007498204113562073,Colonocytes__DPY30__UC_vs_HC,False,Colonocytes__DPY30__UC_vs_HC,Colonocytes,DPY30,UC_vs_HC,-1.3927,0.011467,False
+Goblet__LGALS4__CD_vs_HC,0.007269533073824623,Goblet__LGALS4__CD_vs_HC,False,Goblet__LGALS4__CD_vs_HC,Goblet,LGALS4,CD_vs_HC,-1.1184,6.2427e-07,False
+Monocyte_(subtipo_indeterminado)__VCAN__UC_vs_HC,0.007214163579304839,Monocyte_(subtipo_indeterminado)__VCAN__UC_vs_HC,False,Monocyte_(subtipo_indeterminado)__VCAN__UC_vs_HC,Monocyte (subtipo indeterminado),VCAN,UC_vs_HC,7.7268,4.3601e-09,False
+Epithelium_Ribhi__OLFM4__UC_vs_HC,0.007183822300342254,Epithelium_Ribhi__OLFM4__UC_vs_HC,False,Epithelium_Ribhi__OLFM4__UC_vs_HC,Epithelium Ribhi,OLFM4,UC_vs_HC,4.1625,4.7194e-07,True
+Monocyte_(subtipo_indeterminado)__FPR1__UC_vs_HC,0.007076356310876892,Monocyte_(subtipo_indeterminado)__FPR1__UC_vs_HC,False,Monocyte_(subtipo_indeterminado)__FPR1__UC_vs_HC,Monocyte (subtipo indeterminado),FPR1,UC_vs_HC,5.2709,4.3601e-09,False
+Epithelium_Ribhi__OTOP2__CD_vs_HC,0.006972307570690299,Epithelium_Ribhi__OTOP2__CD_vs_HC,False,Epithelium_Ribhi__OTOP2__CD_vs_HC,Epithelium Ribhi,OTOP2,CD_vs_HC,-3.6335,0.048692,False
+PC_IgA__EPN2-AS1__CD_vs_HC,0.006688966295297477,PC_IgA__EPN2-AS1__CD_vs_HC,False,PC_IgA__EPN2-AS1__CD_vs_HC,PC IgA,EPN2-AS1,CD_vs_HC,2.9823,0.00058904,False
+Colonocytes__SLC25A37__CD_vs_HC,0.00646030203256777,Colonocytes__SLC25A37__CD_vs_HC,False,Colonocytes__SLC25A37__CD_vs_HC,Colonocytes,SLC25A37,CD_vs_HC,2.8407,8.7203e-11,False
+Monocyte_(subtipo_indeterminado)__PIM1__CD_vs_HC,0.006322855021775539,Monocyte_(subtipo_indeterminado)__PIM1__CD_vs_HC,False,Monocyte_(subtipo_indeterminado)__PIM1__CD_vs_HC,Monocyte (subtipo indeterminado),PIM1,CD_vs_HC,2.2334,1.3124e-05,False
+Colonocytes__SLC25A37__UC_vs_HC,0.0061653938210694224,Colonocytes__SLC25A37__UC_vs_HC,False,Colonocytes__SLC25A37__UC_vs_HC,Colonocytes,SLC25A37,UC_vs_HC,3.2751,2.0055e-12,False
+Monocyte_(subtipo_indeterminado)__VCAN__CD_vs_HC,0.005992258853546558,Monocyte_(subtipo_indeterminado)__VCAN__CD_vs_HC,False,Monocyte_(subtipo_indeterminado)__VCAN__CD_vs_HC,Monocyte (subtipo indeterminado),VCAN,CD_vs_HC,6.6141,2.0563e-06,False
+Goblet__LGALS4__UC_vs_HC,0.005884877943796257,Goblet__LGALS4__UC_vs_HC,False,Goblet__LGALS4__UC_vs_HC,Goblet,LGALS4,UC_vs_HC,-1.2206,9.8319e-05,False
+CD8__CTSH__UC_vs_HC,0.0057545744037910546,CD8__CTSH__UC_vs_HC,False,CD8__CTSH__UC_vs_HC,CD8,CTSH,UC_vs_HC,3.8997,2.8318e-06,False
+PC_IgA__ARHGEF38__UC_vs_HC,0.005347803541539083,PC_IgA__ARHGEF38__UC_vs_HC,False,PC_IgA__ARHGEF38__UC_vs_HC,PC IgA,ARHGEF38,UC_vs_HC,-4.77,0.019726,False
+Goblet__ITGB8__CD_vs_HC,0.005305058848013114,Goblet__ITGB8__CD_vs_HC,False,Goblet__ITGB8__CD_vs_HC,Goblet,ITGB8,CD_vs_HC,2.3806,0.0037052,False
+CD4__UBXN10-AS1__CD_vs_HC,0.0052722436332271125,CD4__UBXN10-AS1__CD_vs_HC,False,CD4__UBXN10-AS1__CD_vs_HC,CD4,UBXN10-AS1,CD_vs_HC,3.6667,0.00159,False
+Colonocytes__CCNJL__CD_vs_HC,0.005252506454017143,Colonocytes__CCNJL__CD_vs_HC,False,Colonocytes__CCNJL__CD_vs_HC,Colonocytes,CCNJL,CD_vs_HC,-3.3794,0.018202,False
+Colonocytes__DDAH2__CD_vs_HC,0.004893223999324405,Colonocytes__DDAH2__CD_vs_HC,False,Colonocytes__DDAH2__CD_vs_HC,Colonocytes,DDAH2,CD_vs_HC,-1.9274,8.3013e-12,False
+Monocyte_(subtipo_indeterminado)__FPR1__CD_vs_HC,0.004776100573263501,Monocyte_(subtipo_indeterminado)__FPR1__CD_vs_HC,False,Monocyte_(subtipo_indeterminado)__FPR1__CD_vs_HC,Monocyte (subtipo indeterminado),FPR1,CD_vs_HC,4.1454,1.6247e-05,False
+Colonocytes__CREB3L3__UC_vs_HC,0.004698253487553997,Colonocytes__CREB3L3__UC_vs_HC,False,Colonocytes__CREB3L3__UC_vs_HC,Colonocytes,CREB3L3,UC_vs_HC,-3.9574,0.045766,False

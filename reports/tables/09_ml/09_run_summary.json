@@ -1,0 +1,71 @@
+{
+  "n_pacientes": 18,
+  "n_features": 5080,
+  "ratio_features_pacientes": 282.2,
+  "add_indicator_activado": true,
+  "outliers_calculados": [
+    "GSM6614348_HC-1",
+    "GSM6614354_UC-1",
+    "GSM6614364_CD-5"
+  ],
+  "binario": {
+    "mejor_modelo": "logreg",
+    "metricas": {
+      "logreg": {
+        "auc": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "auc_ci_lo": 1.0,
+        "auc_ci_hi": 1.0
+      },
+      "rf": {
+        "auc": 0.9722222222222223,
+        "f1": 0.96,
+        "accuracy": 0.9444444444444444,
+        "auc_ci_lo": 0.8699567099567099,
+        "auc_ci_hi": 1.0
+      },
+      "svm": {
+        "auc": 1.0,
+        "f1": 0.96,
+        "accuracy": 0.9444444444444444,
+        "auc_ci_lo": 1.0,
+        "auc_ci_hi": 1.0
+      },
+      "xgb": {
+        "auc": 0.6111111111111112,
+        "f1": 0.88,
+        "accuracy": 0.8333333333333334,
+        "auc_ci_lo": 0.19999999999999996,
+        "auc_ci_hi": 1.0
+      }
+    },
+    "permutacion_pvalue": 0.000999000999000999,
+    "n_permutaciones": 1000
+  },
+  "multiclase": {
+    "mejor_modelo": "svm",
+    "metricas": {
+      "logreg": {
+        "f1_macro": 0.7313131313131315,
+        "accuracy": 0.7222222222222222
+      },
+      "rf": {
+        "f1_macro": 0.7835497835497836,
+        "accuracy": 0.7777777777777778
+      },
+      "svm": {
+        "f1_macro": 0.8363636363636363,
+        "accuracy": 0.8333333333333334
+      },
+      "xgb": {
+        "f1_macro": 0.4444444444444444,
+        "accuracy": 0.4444444444444444
+      }
+    },
+    "permutacion_pvalue": 0.000999000999000999,
+    "n_permutaciones": 1000
+  },
+  "alpha_corregido_bonferroni_2_tests": 0.025,
+  "decision_outliers": "mantenidos (los 18)"
+}

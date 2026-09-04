@@ -1,0 +1,8 @@
+patient_id,condition,sexo,n_cells_aggregated
+GSM6614350_HC-3,HC,female,22
+GSM6614351_HC-4,HC,male,12
+GSM6614352_HC-5,HC,male,35
+GSM6614354_UC-1,UC,male,17
+GSM6614356_UC-3,UC,female,13
+GSM6614358_UC-5,UC,male,15
+GSM6614365_CD-6,CD,male,21

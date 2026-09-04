@@ -1,0 +1,26 @@
+{
+  "tipos_celulares_analizados": 14,
+  "comparaciones_completadas": 40,
+  "tipos_celulares_excluidos_por_condicion_unica": [],
+  "genes_deg_significativos_total": 5080,
+  "design_por_tipo_celular": {
+    "B cell": "~ sexo + condition",
+    "CD4": "~ sexo + condition",
+    "CD8": "~ sexo + condition",
+    "Colonocytes": "~ sexo + condition",
+    "Endothelium": "~ sexo + condition",
+    "Epithelium Ribhi": "~ sexo + condition",
+    "Fibroblast (subtipo indeterminado)": "~ sexo + condition",
+    "Glia": "~ sexo + condition",
+    "Goblet": "~ sexo + condition",
+    "Mast": "~ sexo + condition",
+    "Monocyte (subtipo indeterminado)": "~ sexo + condition",
+    "N1": "~ sexo + condition",
+    "PC IgA": "~ sexo + condition",
+    "PC IgG": "~ sexo + condition",
+    "PC IgG 1": "~ condition",
+    "Plasma (subtipo indeterminado)": "~ sexo + condition",
+    "Tuft cells": "~ sexo + condition"
+  },
+  "raw_source_usada": "adata.raw.X"
+}

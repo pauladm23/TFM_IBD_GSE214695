@@ -1,0 +1,22 @@
+cluster,best_lineage_match,best_score,flag_weak_identity
+0,T cell,1.341,False
+1,Tuft,-0.013,True
+2,T cell,1.461,False
+3,Plasma,841.936,False
+4,Plasma,691.913,False
+5,T cell,0.636,False
+6,B cell,1.795,False
+7,Fibroblast,7.429,False
+8,Epitelial,1.795,False
+9,B cell,3.731,False
+10,Goblet,54.622,False
+11,Monocyte,16.137,False
+12,Mast,15.236,False
+13,Plasma,16.888,False
+14,Monocyte,9.666,False
+15,Tuft,-0.004,True
+16,Tuft,1.627,False
+17,Endothelial,4.287,False
+18,Plasma,4.165,False
+19,Plasma,279.337,False
+20,Goblet,4.286,False

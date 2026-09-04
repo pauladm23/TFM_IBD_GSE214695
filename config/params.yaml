@@ -1,14 +1,3 @@
-# =============================================================================
-# config/params.yaml
-#
-# Única fuente de verdad para las rutas del pipeline. Ningún script/notebook
-# debe llevar rutas hardcodeadas: todas se construyen a partir de PROJECT_ROOT
-# (definida por variable de entorno TFM_ROOT) + estas rutas relativas.
-#
-# En Colab:   TFM_ROOT = /content/drive/MyDrive/IBD_TFM
-# En local:   TFM_ROOT = /ruta/a/tu/clon/del/repo   (o la carpeta de datos)
-# =============================================================================
-
 project_root_env_var: "TFM_ROOT"
 project_root_default: "/content/drive/MyDrive/IBD_TFM"   # fallback si no se define la env var
 
@@ -16,6 +5,7 @@ paths:
   raw:
     tar_file: "data/raw/GSE214695_RAW.tar"
     annotation_file: "data/raw/GSE214695_cell_annotation.csv.gz"
+    sra_run_table: "data/raw/SraRunTable.csv"          
 
   interim:
     root: "data/interim"
@@ -28,14 +18,32 @@ paths:
     03_diagnostics: "data/interim/03_diagnostics"     
     04_integrated: "data/interim/04_integrated"        
     05_clustered: "data/interim/05_clustered"          
-    06_annotated: "data/interim/06_annotated"           
+    06_cluster_diagnostics: "data/interim/06_cluster_diagnostics"  
+    07_annotated: "data/interim/07_annotated"           
+    08_deg: "data/interim/08_deg"                      
 
   processed:
     root: "data/processed"
 
   reports:
-    figures: "reports/figures"
-    tables: "reports/tables"
+    root_is_repo: true    
+    figures:
+      01_qc: "reports/figures/01_qc"
+      02_normalization: "reports/figures/02_normalization"
+      03_diagnostics: "reports/figures/03_diagnostics"
+      04_integration: "reports/figures/04_integration"
+      05_clustering: "reports/figures/05_clustering"
+      06_cluster_diagnostics: "reports/figures/06_cluster_diagnostics"
+      07_annotation: "reports/figures/07_annotation"
+      08_deg: "reports/figures/08_deg"                  
+
+    tables:
+      01_qc: "reports/tables/01_qc"
+      03_diagnostics: "reports/tables/03_diagnostics"
+      05_clustering: "reports/tables/05_clustering"
+      06_cluster_diagnostics: "reports/tables/06_cluster_diagnostics"
+      07_annotation: "reports/tables/07_annotation"
+      08_deg: "reports/tables/08_deg"                  
 
 # Ficheros de salida principales de cada etapa 
 outputs:
@@ -43,6 +51,7 @@ outputs:
   diagnosed_h5ad: "IBD_diagnosed.h5ad"
   integrated_h5ad: "IBD_integrated.h5ad"
   clustered_h5ad: "IBD_clustered.h5ad"
+  clustered_diagnostics_h5ad: "IBD_clustered_diagnostics.h5ad"
   annotated_h5ad: "IBD_annotated.h5ad"
 
 # Parámetros del pipeline 
@@ -51,7 +60,7 @@ pipeline:
   condition_key: "condition"
   n_pcs: 20
   n_hvg: 3000
-  target_sum_cpm: 1.0e4
+  target_sum_cpm: 10000
   leiden_resolutions: [0.3, 0.5, 0.8, 1.0]
   leiden_main_resolution: 0.8
   palette:
