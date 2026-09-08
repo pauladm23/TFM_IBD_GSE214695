@@ -76,14 +76,23 @@ TFM_IBD_GSE214695/
 Paso --> Qué hace
 
 00_download_data --> Descarga GSE214695 de GEO y convierte cada muestra a .h5ad
+
 01_qc --> Control de calidad y filtrado, umbrales fijados por muestra
+
 02_normalization --> Concatena las 18 muestras, normaliza, HVGs, PCA
+
 03_diagnostics --> Diagnostica el batch effect antes de integrar
+
 04_integration --> Corrige el batch effect con Harmony
+
 05_clustering --> Leiden a varias resoluciones, se fija la de 0.8
+
 06_cluster_diagnostics --> Revisión de los clusters (qué cluster se queda, cuál se fusiona o se descarta)
+
 07_annotation --> Anotación celular final, cruzada con la anotación oficial 
+
 08_deg_pseudobulk --> Agregación pseudobulk por paciente y tipo celular, expresión diferencial (DESeq2), tabla de features
+
 09_ml_classification --> Clasificación HC/UC/CD, test de permutación, interpretabilidad (SHAP)
 
 01_qc existe en dos versiones que hacen lo mismo por caminos distintos:`config/qc_thresholds.yaml` contiene los umbrales de QC ya decididos y congelados para las 18 muestras. `scripts/01_qc.py` los aplica de forma determinista y reproducible. `notebooks/01_qc_interactive.ipynb` permite explorar otros umbrales de forma interactiva sin afectar al resultado oficial del pipeline.
