@@ -101,11 +101,9 @@ Paso --> Qué hace
 
 Este proyecto usa dos entornos Conda independientes, uno por fase del pipeline:
 
---------------Notebooks-------------------------Entorno-------------------Contenido
+00 a 07 (descarga → anotación celular)  --->  environment.yml  
 
-00 a 07 (descarga → anotación celular)	     environment.yml            Scanpy, AnnData, Harmony, Leiden — ecosistema de análisis de células individuales
-
-08 a 09 (DEG pseudobulk → ML)	          environment_deg_ml.yaml	PyDESeq2, formulaic, scikit-learn — modelado estadístico y clasificación
+08 a 09 (DEG pseudobulk → ML)  -->  environment_deg_ml.yaml   
 
 Cada notebook instala su propio entorno en la primera celda (vía condacolab + conda env update), así que no hace falta activar nada manualmente fuera de Colab: basta con ejecutar los notebooks en orden dentro del bloque correspondiente.
 
