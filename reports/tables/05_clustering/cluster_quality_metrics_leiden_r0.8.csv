@@ -1,0 +1,4 @@
+Métrica,Valor,Interpretación
+Silhouette global,0.2629,0.2-0.5 = razonable en scRNA-seq
+Davies-Bouldin index,1.1483,Más bajo = mejor
+N clusters,21.0,Resolución 0.8

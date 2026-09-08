@@ -1,0 +1,22 @@
+cluster,n_cells,flag_sample_dominance,flag_qc_joint_outlier,best_lineage_match,flag_weak_identity,n_flags,reason,decision
+0,4865,False,False,T cell,False,0,sin hallazgos,OK
+1,4673,False,False,Tuft,True,1,sin identidad de linaje clara (score de marcadores bajo),REVISAR
+2,4436,False,False,T cell,False,0,sin hallazgos,OK
+3,4162,False,False,Plasma,False,0,sin hallazgos,OK
+4,3675,False,False,Plasma,False,0,sin hallazgos,OK
+5,3451,False,False,T cell,False,0,sin hallazgos,OK
+6,2939,False,False,B cell,False,0,sin hallazgos,OK
+7,2478,False,False,Fibroblast,False,0,sin hallazgos,OK
+8,2421,False,False,Epitelial,False,0,sin hallazgos,OK
+9,2226,False,False,B cell,False,0,sin hallazgos,OK
+10,2187,False,False,Goblet,False,0,sin hallazgos,OK
+11,2132,False,False,Monocyte,False,0,sin hallazgos,OK
+12,874,False,False,Mast,False,0,sin hallazgos,OK
+13,663,False,False,Plasma,False,0,sin hallazgos,OK
+14,554,True,False,Monocyte,False,1,dominancia de muestra (posible batch residual),REVISAR_COMPOSICION
+15,505,False,False,Tuft,True,1,sin identidad de linaje clara (score de marcadores bajo),REVISAR
+16,435,False,False,Tuft,False,0,sin hallazgos,OK
+17,304,False,False,Endothelial,False,0,sin hallazgos,OK
+18,182,False,False,Plasma,False,0,sin hallazgos,OK
+19,115,True,False,Plasma,False,1,dominancia de muestra (posible batch residual),REVISAR_COMPOSICION
+20,111,False,False,Goblet,False,0,sin hallazgos,OK
